@@ -47,14 +47,7 @@ class MainActivity : AppCompatActivity(), PokemonsListFragment.ListenerTools{
         val resource = if(resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT)
             R.id.main_fragment
         else {
-            mainContentFragment = PokemonDetailsFragment.newInstance(Pokemon(0,
-                                                                                R.string.n_a_value.toString(),
-                                                                                R.string.n_a_value.toString(),
-                                                                                R.string.n_a_value.toString(),
-                                                                                R.string.n_a_value.toString(),
-                                                                                R.string.n_a_value.toString(),
-                                                                                R.string.n_a_value.toString(),
-                                                                                R.string.n_a_value.toString()))
+            mainContentFragment = PokemonDetailsFragment.newInstance(Pokemon())
             changeFragment(R.id.land_main_cont_fragment, mainContentFragment)
 
             R.id.land_main_fragment

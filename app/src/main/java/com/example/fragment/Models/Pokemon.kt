@@ -4,14 +4,14 @@ import android.os.Parcel
 import android.os.Parcelable
 
 data class Pokemon(
-    val id: Int,
-    val name: String,
-    val url: String,
-    val fsttype: String,
-    val sndtype: String,
-    val weight: String,
-    val height: String,
-    val sprite:String
+    val id: Int = 0,
+    val name: String = "N/A",
+    val url: String = "N/A",
+    val fsttype: String = "N/A",
+    val sndtype: String = "N/A",
+    val weight: String = "N/A",
+    val height: String = "N/A",
+    val sprite:String = "N/A"
 ): Parcelable {
 
     constructor(parcel: Parcel) : this(

@@ -24,9 +24,6 @@ class PokemonViewer : AppCompatActivity() {
         setContentView(R.layout.viewer_pokemon)
 
         val uri:String = this.intent.extras.getString("URL")
-        //setSupportActionBar(toolbarviewer)
-        //supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        //supportActionBar?.setDisplayShowHomeEnabled(true)
         collapsingtoolbarviewer.setExpandedTitleTextAppearance(R.style.ExpandedAppBar)
         collapsingtoolbarviewer.setCollapsedTitleTextAppearance(R.style.CollapsedAppBar)
 
